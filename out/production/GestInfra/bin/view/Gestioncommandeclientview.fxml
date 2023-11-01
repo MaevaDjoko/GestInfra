@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Root" prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS/commande.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.gestioncomclientcontroller">
+   <children>
+      <Pane prefHeight="78.0" prefWidth="810.0" styleClass="pane">
+         <children>
+            <Label layoutX="225.0" layoutY="27.0" text="Gestion Commande Client">
+               <font>
+                  <Font name="Cambria Bold" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="accueil" layoutX="14.0" layoutY="30.0" mnemonicParsing="false" onAction="#Accueil" text="Accueil">
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="button-form" />
+               </styleClass></Button>
+            <Separator layoutY="78.0" prefHeight="3.0" prefWidth="800.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="28.0" layoutY="78.0" prefHeight="326.0" prefWidth="288.0">
+         <children>
+            <Label layoutY="29.0" styleClass="lb" text="Num commande" />
+            <Label layoutY="114.0" styleClass="lb" text="Produit" />
+            <Label layoutX="3.0" layoutY="69.0" styleClass="lb" text="Nom client" />
+            <Label layoutX="-1.0" layoutY="159.0" styleClass="lb" text="Prix unitaire" />
+            <Label layoutX="1.0" layoutY="205.0" styleClass="lb" text="Quantité" />
+            <Label layoutX="8.0" layoutY="278.0" styleClass="lb" text="Date" />
+            <TextField fx:id="numcom" layoutX="117.0" layoutY="16.0" prefHeight="25.0" prefWidth="128.0" promptText="num commande" styleClass="tf" />
+            <TextField fx:id="prixunita" layoutX="117.0" layoutY="153.0" prefHeight="25.0" prefWidth="128.0" promptText="prix unitaire" styleClass="tf" />
+            <TextField fx:id="quantitecl" layoutX="117.0" layoutY="199.0" prefHeight="25.0" prefWidth="128.0" promptText="quantité" styleClass="tf" />
+            <DatePicker fx:id="datecom" layoutX="117.0" layoutY="273.0" prefHeight="25.0" prefWidth="128.0" promptText="date commande" />
+            <ComboBox fx:id="prodcom" layoutX="117.0" layoutY="109.0" prefHeight="25.0" prefWidth="128.0" styleClass="combo-box" />
+            <Label layoutY="239.0" styleClass="lb" text="Prix total" />
+            <TextField fx:id="pt" layoutX="117.0" layoutY="233.0" prefHeight="25.0" prefWidth="128.0" promptText="prix total" styleClass="tf" />
+            <ComboBox fx:id="nomclicom" layoutX="117.0" layoutY="64.0" prefHeight="25.0" prefWidth="128.0" styleClass="combo-box" />
+         </children>
+      </Pane>
+      <TableView fx:id="table4" layoutX="282.0" layoutY="108.0" prefHeight="239.0" prefWidth="525.0">
+        <columns>
+          <TableColumn fx:id="numcom1" prefWidth="61.0" text="Num com" />
+          <TableColumn fx:id="nomcl" prefWidth="84.0" text="Nom client" />
+            <TableColumn fx:id="produitcl" prefWidth="89.0" text="Produit" />
+            <TableColumn fx:id="prixu" text="Prix unitaire" />
+            <TableColumn fx:id="qcom" prefWidth="59.0" text="Quantité" />
+            <TableColumn fx:id="ptcom" prefWidth="66.0" text="Prix total" />
+            <TableColumn fx:id="datecom1" prefWidth="84.0" text="Date" />
+        </columns>
+      </TableView>
+      <Pane fx:id="anchor" layoutX="324.0" layoutY="383.0" prefHeight="292.0" prefWidth="465.0">
+         <children>
+            <Pane layoutX="-7.0" layoutY="2.0" prefHeight="46.0" prefWidth="489.0">
+               <children>
+                  <Separator layoutX="11.0" orientation="VERTICAL" prefHeight="298.0" prefWidth="5.0" />
+                  <Separator layoutX="14.0" layoutY="-1.0" prefHeight="3.0" prefWidth="465.0" />
+                  <ImageView fitHeight="46.0" fitWidth="49.0" layoutX="93.0" layoutY="2.0">
+                     <image>
+                        <Image url="@../../../../Pictures/iuc.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="26.0" layoutY="17.0" text="GestInfra-">
+                     <styleClass>
+                        <String fx:value="label" />
+                        <String fx:value="lb" />
+                     </styleClass>
+                  </Label>
+                  <Label layoutX="195.0" layoutY="14.0" text="Facture">
+                     <font>
+                        <Font name="Cambria Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Separator layoutX="4.0" layoutY="47.0" prefHeight="3.0" prefWidth="473.0" />
+            <Label layoutX="21.0" layoutY="66.0" text="Nom client">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="96.0" text="Designation">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="131.0" text="Prix unitaire">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="168.0" text="Quantité">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="26.0" layoutY="200.0" text="Prix total">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="nomcli" layoutX="131.0" layoutY="53.0" promptText="nom client" styleClass="tf" />
+            <TextField fx:id="designfact" layoutX="131.0" layoutY="83.0" promptText="designation" styleClass="tf" />
+            <TextField fx:id="pufact" layoutX="131.0" layoutY="118.0" promptText="prix unitaire" styleClass="tf" />
+            <TextField fx:id="qfact" layoutX="131.0" layoutY="155.0" promptText="quantité" styleClass="tf" />
+            <TextField fx:id="ptfact" layoutX="131.0" layoutY="186.0" promptText="prix total" styleClass="tf" />
+            <Button fx:id="imprimefact" layoutX="362.0" layoutY="239.0" mnemonicParsing="false" onAction="#imprimer" styleClass="button-form" text="Imprimer" />
+            <Label layoutX="17.0" layoutY="231.0" text="Date facture">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <DatePicker fx:id="datefact" layoutX="131.0" layoutY="227.0" prefHeight="25.0" prefWidth="149.0" promptText="date facture" />
+            <Separator layoutX="4.0" layoutY="277.0" prefHeight="3.0" prefWidth="489.0" />
+         </children>
+      </Pane>
+      <Button fx:id="ajoutcom" layoutX="45.0" layoutY="431.0" mnemonicParsing="false" onAction="#ajoutercom" text="Ajouter">
+         <styleClass>
+            <String fx:value="button" />
+            <String fx:value="button-form" />
+         </styleClass></Button>
+      <Button fx:id="modifiecom" layoutX="173.0" layoutY="431.0" mnemonicParsing="false" onAction="#modifiercom" text="Modifier">
+         <styleClass>
+            <String fx:value="button" />
+            <String fx:value="button-form" />
+         </styleClass></Button>
+      <Button fx:id="supprimecom" layoutX="37.0" layoutY="496.0" mnemonicParsing="false" onAction="#supprimercom" text="Supprimer">
+         <styleClass>
+            <String fx:value="button" />
+            <String fx:value="button-form" />
+         </styleClass></Button>
+      <Button fx:id="affichecom" layoutX="175.0" layoutY="496.0" mnemonicParsing="false" onAction="#affichercom" text="Afficher">
+         <styleClass>
+            <String fx:value="button" />
+            <String fx:value="button-form" />
+         </styleClass></Button>
+      <Button fx:id="slctcom" layoutX="108.0" layoutY="567.0" mnemonicParsing="false" onAction="#selectioncom" text="Selection">
+         <styleClass>
+            <String fx:value="button" />
+            <String fx:value="button-form" />
+         </styleClass></Button>
+      <Button fx:id="brechcom" layoutX="374.0" layoutY="354.0" mnemonicParsing="false" onAction="#rechercomcli" text="Recherche">
+         <styleClass>
+            <String fx:value="button" />
+            <String fx:value="button-form" />
+         </styleClass></Button>
+      <TextField fx:id="recherchercom" layoutX="633.0" layoutY="354.0" promptText="rechercher par" styleClass="tf" />
+      <ComboBox fx:id="rcherparcom" layoutX="469.0" layoutY="354.0" prefWidth="150.0" styleClass="combo-box" />
+      <Separator layoutX="792.0" layoutY="383.0" orientation="VERTICAL" prefHeight="281.0" prefWidth="6.0" />
+      <Button fx:id="stat1" layoutX="19.0" layoutY="627.0" mnemonicParsing="false" onAction="#statistique" text="Statistiques" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.main-bg{
+	-fx-background-image:url;
+	-fx-background-size:1300;
+}
+
+
+
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.tf{	/*pour modifier les texfield */
+	-fx-border-color:  #1F8CC7;
+	-fx-background-color: transparent;
+	-fx-border-width: 0px 0px 2px 0px;
+	
+	}
+	
+	
+	.lb{	/*pour modifier les label */
+	
+	-fx-font-weight:bold;
+	-fx-text-fill:#1f8cc7;
+	-fx-font:bold 12pt ;
+	-fx-font-size:18;
+	-fx-font-family:"Cambria";
+	
+	}
+	
+
+
+.button{	/*pour modifier les bouttons */
+	
+	-fx-background-color: #0074E8;
+	-fx-background-radius: 5;
+	/*-fx-background-insets:0;*/
+	-fx-font: 10pt;
+	-fx-font-size:12;
+	-fx-font-weight:bold;
+}
+
+
+.button-selected{
+	-fx-background-color:#0074E8;
+	-fx-text-fill:#ffaa19;
+	-fx-background-radius:10;
+
+}
+
+.button-form{
+	-fx-background-color:#0074E8;
+	-fx-text-fill:white;
+	-fx-cursor:hand;
+}
+	
+	
+	.root{
+	-fx-background-color:  white;
+	
+	}
+	.pane{
+		-fx-background-color: #0074E8;
+	}
+	
+	

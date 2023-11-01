@@ -1,0 +1,62 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.main-bg{
+	-fx-background-image:url;
+	-fx-background-size:1300;
+}
+
+
+
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.tf{	/*pour modifier les texfield */
+	-fx-text-fill:white;
+	-fx-font:bold 10pt "Tahoma";
+	-fx-background-color:#FFFFFF;
+	
+	}
+	
+	
+	.lb{	/*pour modifier les label */
+	
+	-fx-text-fill:black;
+	-fx-font-weight:bold;
+	-fx-text-fill:#FFFFFF;
+	-fx-font:bold 12pt ;
+	-fx-font-size:14;
+	-fx-font-family:"Book Antiqua";
+	
+	}
+	
+
+
+.button{	/*pour modifier les bouttons */
+	
+	-fx-background-color:rgb(94, 94, 241);
+	-fx-background-radius: 10;
+	-fx-background-insets:0;
+	-fx-text-fill:black;
+	-fx-font: 10pt "Comic Sans MS";
+	-fx-font-size:14;
+	-fx-font-weight:bold;
+}
+
+
+.button-selected{
+	-fx-background-color:#AB64E6;
+	-fx-text-fill:white;
+	-fx-background-radius:10;
+
+}
+
+.button-form{
+	
+	-fx-cursor:hand;
+}
+	
+	.root{
+	-fx-background-color:white;
+	
+	}

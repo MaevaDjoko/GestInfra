@@ -1,0 +1,38 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.main-bg{
+	-fx-background-image:url(.../Images/logo.jpg);
+}
+
+
+
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.tf{	/*pour modifier les texfield */
+	-fx-text-fill:#ffaa19;
+	-fx-font:bold 10pt "Tahoma";
+	-fx-background-color:#FFFFFF;
+	
+	}
+	
+	
+	.lb{	/*pour modifier les label */
+	
+	-fx-text-fill:black;
+	-fx-font-weight:bold;
+	-fx-text-fill:#FFFFFF;
+	-fx-font:bold 12pt ;
+	-fx-font-size:14;
+	-fx-font-family:"Book Antiqua";
+	
+	}
+	
+
+
+	
+.root{
+	-fx-background-color: #FFFFB6;
+	-fx-background-image:url(.../Images/Chaises.jpg);
+	 }
